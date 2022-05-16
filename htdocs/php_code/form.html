@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 align="center">ADMISSION FORM</h1>
+    <form action="form.php" method="POST">
+      <table border="2">
+        <tr>
+          <td width="500">NAME</td>
+          <td>
+            <input
+              type="text"
+              placeholder="enter your name"
+              required
+              name="name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>AGE</td>
+          <td>
+            <input
+              type="number"
+              placeholder="enter your age"
+              name="age"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>PHONE NUMBER</td>
+          <td>
+            <input
+              type="text"
+              placeholder="enter your number"
+              name="number"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>EMAIL</td>
+          <td>
+            <input
+              type="email"
+              placeholder="enter your email"
+              name="email"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>SELECT YOUR CITY</td>
+          <td>
+            <input
+              type="text"
+              list="cities"
+              placeholder="selct your city"
+              name="city"
+              required
+            />
+          </td>
+          <datalist id="cities">
+            <option>KARACHI</option>
+            <option>LAHORE</option>
+            <option>MULTAN</option>
+            <option>KASHMIR</option>
+          </datalist>
+        </tr>
+        <tr>
+          <td>SELECT YOUR UNIVERSITY</td>
+          <td>
+            <select name="university" required>
+              <option>NED UNIVERSITY</option>
+              <option>KARACHI UNIVERSITY</option>
+              <option>IQRA UNIVERSITY</option>
+              <option>JINNAH UNIVERSITY</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <fieldset>
+        <legend>FAVOURTITE COUNTRTRY</legend>
+        <input type="radio" value="p" name="country" />PAKISTAN <br />
+        <input type="radio" value="s" name="country" />SIRILANKA <br />
+        <input type="radio" value="a" name="country" />AUSTRALIA <br />
+        <input type="radio" value="g" name="country" />GERMANY <br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>GENDER</legend>
+        <input type="radio" name="gender" value="m" />MALE <br />
+        <input type="radio" name="gender" value="f" />FEMALE <br />
+      </fieldset>
+      <br />
+      <textarea cols="92" rows="10" readonly>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatibus illo repellendus doloremque deleniti esse autem deserunt! Illum esse magni sunt dolorum et assumenda quasi, nobis nesciunt, a ipsa corrupti.</textarea
+      >
+      <br />
+      <input type="radio" required /> I AGREE <br /><br />
+      <br />
+      UPLOAD PHOTO &nbsp;
+      <input type="file" />
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
